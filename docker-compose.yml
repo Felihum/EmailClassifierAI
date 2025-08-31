@@ -1,0 +1,19 @@
+services:
+
+  # ========================================================================================
+  # ------------------------------------- BACKEND ------------------------------------------
+  # ========================================================================================
+
+  backend:
+    build:
+      context: ./backend # Diz ao Docker para buscar o Dockerfile no diretorio atual
+      dockerfile: Dockerfile
+
+    ports:
+      - "5000:5000" # Mapeia a porta 5000 do seu host (maquina local) para a porta 5000 do container
+                    # Isso permite acessar o Flask via http://localhost:5000
+
+    env_file:
+      - ./backend/.env 
+
+    restart: on-failure
