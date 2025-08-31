@@ -74,20 +74,20 @@ docker compose up -d
 ```
 **`-d`:** Inicia os contêineres em segundo plano (detached mode), liberando seu terminal.
 
-4.  Iniciar frontend:
+4.  Entre na pasta do frontend:
 
 ```bash
 cd frontend
 ```
 
-  Em seguida:
+Instale as dependências:
+
+```bash
+npm i
+```
+
+Inicie o frontend
 
 ```bash
 npm start
-```
-
-5.  Acessar a aplicação:
-
-```bash
-http://localhost:3000
 ```
