@@ -4,9 +4,20 @@ import traceback
 from flask import jsonify, request
 from app.cryptography_module import decrypt
 from flask_cors import CORS
+import os
+from app.cryptography_module import generate_keys
 
 # Instancía a aplicação
 app = create_app()
+
+# Verifica se os arquivos das chaves de criptografia existem, se não, geram as chaves --------------------
+
+key_file_path = os.path.join(app.root_path, "private_key.pem")
+
+if not os.path.exists(key_file_path):
+    generate_keys()
+
+# --------------------------------------------------------------------------------------------------------
 
 # Configurações de CORS -------------------------------------------------------------
 
@@ -20,17 +31,17 @@ CORS(app, resources={r"/*": {"origins": origins}}, supports_credentials=True,
 
 # -----------------------------------------------------------------------------------
 
-# --- Carrega a chave de criptografia pública ---
-with open("public_key.pem", "rb") as f:
-    public_key_pem = f.read().decode("utf-8")
-# -----------------------------------------------
-
 # ===========================================================
 #  ENDPOINT PARA OBTENÇÂO DA CHAVE PÚBLICA DE CRIPTOGRAFIA
 # ===========================================================
 
 @app.route("/public-key", methods=["GET"])
 def get_public_key():
+    # --- Carrega a chave de criptografia pública ---
+    with open("app/public_key.pem", "rb") as f:
+        public_key_pem = f.read().decode("utf-8")
+    # -----------------------------------------------
+
     """Retorna a chave pública para o frontend"""
     return jsonify({"publicKey": public_key_pem})
 

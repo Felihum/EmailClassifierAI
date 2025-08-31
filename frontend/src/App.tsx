@@ -1,6 +1,5 @@
-import { ChangeEventHandler, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-import { api } from './apiBaseURL';
 import { EmailPage } from './pages/EmailPage';
 import { EmailType } from './types/EmailTypes';
 import { EmailsTablePage } from './pages/EmailsTablePage';

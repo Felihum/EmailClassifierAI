@@ -33,7 +33,7 @@ text_preprocessor = EmailPreprocessor()
 # =================================================================
 
 @bp_email.route("/", methods=["POST"])
-def classify_text_email():
+def upload_text_emails():
 
     email_set: str = request.get_json()["email"]
     file_type = "default"
@@ -63,7 +63,7 @@ def classify_text_email():
 # =================================================================
 
 @bp_email.route("/upload", methods=["POST"])
-def update_file():
+def upload_file_emails():
 
     # Verifica se foi enviado algum arquivo
     if 'file' not in request.files:
@@ -94,8 +94,6 @@ def update_file():
 # =================================================================
 
 
-# ---------------------- Funções Privadas --------------------------
-
 def _classify_emails(emails: [Email]):
 
     # ------------------- Monta a estrutura de prompt dos emails -------------------------
@@ -112,6 +110,7 @@ def _classify_emails(emails: [Email]):
     )
 
     return classification_response_json.text
+
 
 def _extract_content_from_file(file: FileStorage):
     content: str = ""
@@ -142,11 +141,13 @@ def _extract_content_from_file(file: FileStorage):
     else:
         return jsonify({"error": "Formato inválido. Envie .txt ou .pdf"}), 400
 
+
 def _clean_emails(email_set: str, file_type: str):
 
     # Extrai os emails do conjunto
     emails: [str] = text_preprocessor.extract_emails_from_set(email_set.strip(), file_type)
-    cleaned_emails: [Email] = list()
+
+    cleaned_emails: [Email] = []
 
     for email in emails:
         # Extrai os dados do Remetente e da Mensagem de cada email
@@ -155,6 +156,7 @@ def _clean_emails(email_set: str, file_type: str):
         cleaned_emails.append(Email(sender, message))
 
     return cleaned_emails
+
 
 def _organize_ai_response(ai_answer_json):
     classifications = []
