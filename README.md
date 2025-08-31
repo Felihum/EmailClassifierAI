@@ -80,13 +80,13 @@ docker compose up -d
 cd frontend
 ```
 
-Instale as dependências:
+5.  Instale as dependências:
 
 ```bash
 npm i
 ```
 
-Inicie o frontend
+6.  Inicie o frontend
 
 ```bash
 npm start
