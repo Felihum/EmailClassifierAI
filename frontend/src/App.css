@@ -1,0 +1,20 @@
+.backButton{
+  transition: 0.2s;
+  cursor: pointer;
+  position: fixed; 
+  left: 0; 
+  top: 0;
+  margin-top: 3.25rem; 
+  margin-left: 3.25rem;
+  padding: 10px;
+  border: .0313rem solid var(--color-border);
+  border-radius: .3125rem;
+}
+
+.backButton:hover{
+  background-color: var(--color-button-hover);
+}
+
+.emailPage{
+  height: 100vh;
+}

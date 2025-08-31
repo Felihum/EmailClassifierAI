@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "MicrosoftMonoSerif";
+  src: url("/assets/fonts/micross.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: white;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+:root{
+  font-family: 'MicrosoftMonoSerif', sans-serif;
+  --color-background: #191919;
+  --color-border: #686868;
+  --color-primary: #2C2C2C;
+  --color-secondary: #1F1F1F;
+  --color-button-hover: #242424;
+  --color-red: #973232ff;
+  --color-green: #40914eff;
+  --color-modal-background: #00000077;
+}

@@ -1,0 +1,102 @@
+.mainContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  gap: 2.25rem;
+}
+
+.descriptionContainer{
+  width: 35.625rem;
+}
+
+.descriptionContainer h1{
+  font-size: 2.8125rem;
+}
+
+.descriptionContainer p{
+  font-size: 1rem;
+}
+
+.formContainer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fileInput{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 18.75rem;
+  background-color: var(--color-primary);
+  border: .0313rem dashed var(--color-border);
+  border-radius: .625rem;
+  font-size: .8125rem;
+}
+
+.inputContainer{
+  display: flex; 
+  gap: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer button{
+  transition: 0.2s;
+  width: 25rem;
+  padding: 1.25rem 0;
+  background-color: var(--color-primary);
+  border: .0313rem solid var(--color-border);
+  border-radius: .625rem;
+  color: white;
+  cursor: pointer;
+}
+
+.formContainer button:hover{
+  background-color: var(--color-button-hover);
+}
+
+.inputContainer textarea{
+  width: 22.5rem;
+  height: 16.25rem;
+  background-color: var(--color-primary);
+  border: .0313rem solid var(--color-border);
+  border-radius: .625rem;
+  font-size: .8125rem;
+  resize: none;
+  padding: 1.25rem;
+  color: white;
+  font-family: 'MicrosoftMonoSerif', sans-serif;
+}
+
+.fileInput input{
+  display: none;
+}
+
+.typeInput{
+  width: 25.2rem;
+}
+
+.typeInput select{
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border-radius: .625rem;
+  border: .0313rem solid var(--color-border);
+  padding: .625rem;
+}
+
+.typeInput option{
+  background-color: var(--color-primary);
+  color: white;
+}

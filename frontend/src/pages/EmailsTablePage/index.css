@@ -1,0 +1,82 @@
+.tableContainer{
+  width: 52.5rem;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.tableContainer h1{
+  margin-top: 3.75rem;
+}
+
+.tableContainer p{
+  font-size: .8125rem;
+}
+
+table {
+  max-height: 37.5rem;
+  width: 100%;
+  margin: .625rem auto;
+  border-collapse: collapse;
+  background-color: var(--color-secondary);
+  box-shadow: 0 .125rem .375rem rgba(0,0,0,0.1);
+  
+}
+
+th, td {
+  padding: .75rem .9375rem;
+  text-align: left;
+  border-bottom: .0313rem solid var(--color-border);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 12.5rem;
+  white-space: nowrap;
+}
+
+th {
+  background-color: var(--color-background);
+  color: white;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: var(--color-button-hover);
+}
+
+.openModalButton{
+  transition: 0.2s;
+  cursor: pointer;
+  position: fixed; 
+  right: 0; 
+  top: 0;
+  margin-top: 3.25rem; 
+  margin-right: 3.25rem;
+  padding: .625rem;
+  border: .0313rem solid var(--color-border);
+  border-radius: .3125rem;
+}
+
+.openModalButton:hover{
+  background-color: var(--color-button-hover);
+}
+
+.filterContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.875rem;
+}
+
+.filterInputsContainer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+  font-size: .8125rem;
+}
+
+.filterInputsContainer div input{
+  margin: 0;
+  margin-right: .3125rem;
+  cursor: pointer;
+}

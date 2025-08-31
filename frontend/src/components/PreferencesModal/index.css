@@ -1,0 +1,95 @@
+.preferencesModalBg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--color-modal-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    z-index: 2;
+}
+
+.preferencesModalBg main{
+    width: 31.25rem;
+    border-radius: .625rem;
+    background-color: var(--color-primary);
+    border: .0313rem solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 40px;
+}
+
+.preferencesModalBg main h1{
+    width: 100%;
+    margin: 0;
+}
+
+.preferencesModalBg .modalLabelContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.preferencesModalBg main p{
+    width: 100%;
+    margin: 0;
+}
+
+.preferencesModalBg main form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.preferencesModalBg main form .savePreferenceButton{
+    width: 200px;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 10px;
+    border: .0313rem solid var(--color-border);
+    border-radius: .3125rem;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.preferencesModalBg main form .savePreferenceButton:hover{
+    background-color: var(--color-button-hover);
+}
+
+.preferencesModalBg main form .cancelPreferenceButton{
+    width: 200px;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 10px;
+    border: .0313rem solid var(--color-border);
+    border-radius: .3125rem;
+    color: white;
+    background-color: var(--color-background);
+}
+
+.preferencesModalBg main form .cancelPreferenceButton:hover{
+    background-color: var(--color-button-hover);
+}
+
+.preferencesModalBg main form div{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    width: 100%;
+}
+
+.preferencesModalBg main form div input{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: .0313rem solid var(--color-border);
+    color: white;
+}

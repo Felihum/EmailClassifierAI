@@ -1,0 +1,33 @@
+.emailSentModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1.25rem;
+    margin-right: 1.25rem;
+    border-radius: .625rem;
+    border: .0313rem solid var(--color-border);
+    color: rgb(106, 255, 106);
+}
+
+.emailSentModal .labelModalContainer div{
+    font-size: 60px;
+}
+
+.emailSentModal .labelModalContainer p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.emailSentModal .labelModalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,81 @@
+.backToHomeModal{
+    background-color: var(--color-modal-background);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 4;
+}
+
+.modalContainer{
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    background-color: var(--color-background);
+    border: .0313rem solid var(--color-border);
+    border-radius: .625rem;
+}
+
+.modalContainer .labelContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContainer h1{
+    margin: 0;
+}
+
+.modalContainer p{
+    margin: 0;
+}
+
+.modalContainer div{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.modalContainer div button{
+    width: 12.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: .625rem;
+    border: .0313rem solid var(--color-border);
+    border-radius: .3125rem;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.modalContainer div .cancelButton{
+    width: 12.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: .625rem;
+    border: .0313rem solid var(--color-border);
+    border-radius: .3125rem;
+    color: white;
+    background-color: var(--color-background);
+}
+
+.modalContainer div .cancelButton:hover{
+    background-color: var(--color-button-hover);
+}
+
+.modalContainer div .backToHomeButton{
+    width: 12.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: .625rem;
+    border: .0313rem solid var(--color-border);
+    border-radius: .3125rem;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.modalContainer div .backToHomeButton:hover{
+    background-color: var(--color-button-hover);
+}

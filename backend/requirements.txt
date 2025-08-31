@@ -1,0 +1,8 @@
+flask
+pypdf2
+flask-cors
+google-generativeai
+dotenv
+flask-mail
+cryptography
+PyJWT
