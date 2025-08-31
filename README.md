@@ -1,10 +1,14 @@
 # AutoU-Case
-This application is an automation for emails, which generates classification and suggested answers for an email set. All of this by AI.
+Esta aplicação consiste em uma automação para emails, a qual, entre outras coisas, gera uma classificação e uma sugestão de resposta para um conjunto de emails, que podem ser enviados por meio de arquivos `.txt`, `.pdf` ou por texto manuscrito. Tudo isso feito por IA.
+
+![images](./images/EmailClassifier1.png)
+![images](./images/EmailClassifier2.png)
+![images](./images/EmailClassifier3.png)
 
 ## 🚀 Funcionalidades
 
 * **Entrada Flexível de E-mails:**
-    * Upload de arquivos de email nos formatos `.txt` ou `.pdf`.
+    * Upload de arquivos de emails nos formatos `.txt` ou `.pdf`.
     * Inclusão direta de texto de emails através de área de texto.
 
 * **Classificação de E-mails com IA:**
