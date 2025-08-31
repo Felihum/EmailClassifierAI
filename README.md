@@ -62,7 +62,7 @@ git clone git@github.com:Felihum/AutoU-Case.git
 2.  Na primeira vez que você rodar (ou após grandes alterações em dependências/código), construa as imagens Docker sem usar o cache para garantir que tudo esteja atualizado:
 
 ```bash
-docker compose build --no-cache backend frontend
+docker compose build --no-cache backend
 ```
 
 **Observação:** A construção da imagem pode demorar alguns minutos (devido à instalação de bibliotecas da aplicação). Em execuções futuras, você pode omitir `--no-cache` para usar o cache e acelerar o processo.
@@ -79,6 +79,8 @@ docker compose up -d
 ```bash
 cd frontend
 ```
+
+  Em seguida:
 
 ```bash
 npm start
