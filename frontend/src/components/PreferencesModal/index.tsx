@@ -23,11 +23,11 @@ export function PreferencesModal(props: PreferencesModalProps){
                 <form onSubmit={handleSetPreferences}>
                     <div>
                         <label>Email de Envio</label>
-                        <input type="email" defaultValue={sessionStorage.getItem("sender") as string} name="sender" />    
+                        <input type="email" defaultValue={localStorage.getItem("sender") as string} name="sender" />    
                     </div>
                     <div>
                         <label>Senha de Aplicativo do Email</label>
-                        <input type="password" defaultValue={sessionStorage.getItem("password") as string} name="password" />
+                        <input type="password" defaultValue={localStorage.getItem("password") as string} name="password" />
                     </div>
                     <div style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
                         <button className="cancelPreferenceButton" onClick={() => props.setModalOpen(false)}>Cancelar</button>

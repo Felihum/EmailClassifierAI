@@ -9,8 +9,8 @@ export function set_preferences(event: FormEvent<HTMLFormElement>){
     const sender = formData.get("sender") as string
     const password = formData.get("password") as string
 
-    sessionStorage.setItem("sender", sender)
-    sessionStorage.setItem("password", password)
+    localStorage.setItem("sender", sender)
+    localStorage.setItem("password", password)
 }
 // -----------------------------------------------------------------------
 
