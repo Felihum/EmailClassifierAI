@@ -25,10 +25,7 @@ class EmailPreprocessor:
         # 3. Remover assinaturas
         text = self._remove_signatures_refined(text)
 
-        # 4. Converter para minúsculas
-        text = self._to_lowercase(text)
-
-        # 5. Remover espaços extras
+        # 4. Remover espaços extras
         text = self._remove_extra_whitespace(text)
 
         return sender, text
@@ -124,14 +121,6 @@ class EmailPreprocessor:
             return ""
         text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
         return text
-
-    # ----------- Função para deixar o email em lowercase ---------------------------
-    def _to_lowercase(self, text: str) -> str:
-
-        if not isinstance(text, str):
-            return ""
-        return text.lower()
-
     # -------------------------------------------------------------------------------
 
     # ----------- Função de remoção de espaços em branco do email -------------------

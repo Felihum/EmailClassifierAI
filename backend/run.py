@@ -38,7 +38,7 @@ CORS(app, resources={r"/*": {"origins": origins}}, supports_credentials=True,
 @app.route("/public-key", methods=["GET"])
 def get_public_key():
     # --- Carrega a chave de criptografia pública ---
-    with open("app/public_key.pem", "rb") as f:
+    with open("public_key.pem", "rb") as f:
         public_key_pem = f.read().decode("utf-8")
     # -----------------------------------------------
 
