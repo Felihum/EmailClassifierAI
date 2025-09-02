@@ -51,6 +51,7 @@ Siga os passos abaixo para configurar seu ambiente de desenvolvimento.
 * **pip:** Gerenciador de pacotes Python.
 * **Docker Engine:** Para executar o backend containerizado.
 * **Git:** Para clonar o repositório.
+* **Gemini API Key** Chave para utilizar a API do Gemini.
 
 ### Clonar o Repositório
 
@@ -94,6 +95,20 @@ npm i
 ```bash
 npm start
 ```
+
+## Para usar o modelo de IA Gemini
+Para usar o modelo de IA do Gemini, você precisa ter uma chave da API do Gemini. Para isso, siga os seguintes passos:
+1.  Acesse o Google AI Studio com a sua conta do Google.
+2.  Clique na opção "Obter chave de API"
+3.  Clique no botão "+ Criar chave de API"
+4.  Siga as instruções dadas.
+
+### Colocar a chave para uso na aplicação
+Para colocar a chave na aplicação, utilize o modelo de arquivo .env, disponível na pasta backend, dentro do arquivo .env-model.txt.
+1.  Copiar o texto do arquivo .env-model.txt.
+2.  Crie um arquivo .env na pasta backend.
+3.  Cole o conteúdo copiado no arquivo .env.
+4.  Adicione a chave da API no campo GENAI_KEY.
 
 ## Para usar o serviço de envio de email
 Para usar o serviço de envio de email, é preciso ter um email com a "Verificação em duas etapas" ativada, junto com uma senha de aplicativo atrelada a esse email.
