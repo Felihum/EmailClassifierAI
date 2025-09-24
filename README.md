@@ -56,7 +56,7 @@ Siga os passos abaixo para configurar seu ambiente de desenvolvimento.
 ### Clonar o Repositório
 
 ```bash
-git clone git@github.com:Felihum/AutoU-Case.git
+git clone git@github.com:Felihum/EmailClassifierAI.git
 ```
 
 ### Iniciar a Aplicação Completa (Frontend e Backend)
