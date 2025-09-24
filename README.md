@@ -1,4 +1,4 @@
-# AutoU-Case
+# EmailClassifierAI
 Esta aplicação consiste em uma automação para emails, a qual, entre outras coisas, gera uma classificação e uma sugestão de resposta para um conjunto de emails, que podem ser enviados por meio de arquivos `.txt`, `.pdf` ou por texto manuscrito. Tudo isso feito por IA. Você pode acessar a aplicação online pelo link:
 https://email-classifier-frontend-three.vercel.app/
 
